@@ -1,17 +1,12 @@
-var fs = require("fs");
-var path = require("path");
-var utilities = require("../lib/utilities");
-//var xcode = require("xcode");
-
-/*
 module.exports = function (context) {
-//fix as suggested here > https://github.com/chemerisuk/cordova-plugin-firebase-hooks/commit/089a5978076acf01b3cd599991a5219f79438271
+
   var fs = require('fs'),
       path = require('path'),
       util = require('util'),
+      utilities = require("../lib/utilities");
       xcode = context.requireCordovaModule('xcode'),
       plist = context.requireCordovaModule('plist');
-} */
+    
 
 /**
  * This is used as the display text for the build phase block in XCode as well as the
@@ -42,7 +37,7 @@ module.exports = {
      */
   addShellScriptBuildPhase: function (context, xcodeProjectPath) {
    
-      var xcode = context.require("xcode");
+      //var xcode = context.require("xcode");
       
     // Read and parse the XCode project (.pxbproj) from disk.
     // File format information: http://www.monobjc.net/xcode-project-file-format.html
@@ -97,7 +92,7 @@ module.exports = {
      */
   removeShellScriptBuildPhase: function (context, xcodeProjectPath) {
     
-      var xcode = context.require("xcode");
+     // var xcode = context.require("xcode");
       
     // Read and parse the XCode project (.pxbproj) from disk.
     // File format information: http://www.monobjc.net/xcode-project-file-format.html
@@ -153,3 +148,4 @@ module.exports = {
     fs.writeFileSync(xcodeProjectPath, xcodeProject.writeSync());
   }
 };
+}
