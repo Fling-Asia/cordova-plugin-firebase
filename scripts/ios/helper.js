@@ -4,7 +4,7 @@ var utilities = require("../lib/utilities");
 //var xcode = require("xcode");
 
 //fix as suggested here > https://github.com/chemerisuk/cordova-plugin-firebase-hooks/commit/089a5978076acf01b3cd599991a5219f79438271
- var xcode = context.requireCordovaModule('xcode'),
+ var xcode = context.requireCordovaModule('xcode');
  var plist = context.requireCordovaModule('plist');
 
 
