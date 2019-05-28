@@ -1,3 +1,4 @@
+module.exports = function (context) {
 var fs = require("fs");
 var path = require("path");
 var utilities = require("../lib/utilities");
@@ -6,7 +7,7 @@ var utilities = require("../lib/utilities");
 //fix as suggested here > https://github.com/chemerisuk/cordova-plugin-firebase-hooks/commit/089a5978076acf01b3cd599991a5219f79438271
  var xcode = context.requireCordovaModule('xcode');
  var plist = context.requireCordovaModule('plist');
-
+}
 
 /**
  * This is used as the display text for the build phase block in XCode as well as the
